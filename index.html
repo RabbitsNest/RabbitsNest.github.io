@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   
   <title> [ Hexo ]</title>
@@ -22,9 +22,9 @@
       });
     </script>
 
-<meta name="generator" content="Hexo 4.2.0"></head>
+<meta name="generator" content="Hexo 4.2.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
 <body>
-    <div class="header">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="header">
         <div class="container">
     <div class="menu">
       <div class="menu-left">
@@ -76,14 +76,14 @@
           
             <p>斜体和粗体语法说明:
 
-加粗:   要加粗的文字左右用两个 “*” 号包裹如: 加粗文字code:   **加粗文字**
-斜体:   要倾斜的文字左右用一个 “*” 号包裹如: 倾斜文字code:   *倾斜文字*
-斜体加粗:   要倾斜和加粗的文字左右用三个 “*” 号包裹如: 加粗倾斜文字code:   ***加粗倾斜文字***
+加粗:   要加粗的文字左右用两个 ““ 号包裹如: 加粗文字code:   ` *加粗文字 `
+斜体:   要倾斜的文字左右用一个 ““ 号包裹如: 倾斜文字code:   ` 倾斜文字* `
+斜体加粗:   要倾斜和加粗的文字左右用三个 ““ 号包裹如: **加粗倾斜文字code:   ` 加粗倾斜文字* `
 删除线：  要加删除线的文字左右用两个 ~ 号包裹如: 加删除线文字code:   ~~加删除线文字~~
 
 
 引用语法说明:
-1234&amp;gt;这是引用的内容&amp;gt;&amp;gt;这是引用的内...</p>
+1234&amp;gt;这是引用的内容&amp;gt;&amp;gt;这是引用...</p>
           
         </div>
         <div class="atricle-item-time">
@@ -246,7 +246,25 @@ $(function() {
     });
 });
 </script>
+    <!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
 </div>
     </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<!-- <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>

@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   
   <title>markdown语法 [ Hexo ]</title>
@@ -22,9 +22,9 @@
       });
     </script>
 
-<meta name="generator" content="Hexo 4.2.0"></head>
+<meta name="generator" content="Hexo 4.2.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
 <body>
-    <div class="header">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="header">
         <div class="container">
     <div class="menu">
       <div class="menu-left">
@@ -64,15 +64,14 @@
 <article class="post markdown-style">
   <h3 id="斜体和粗体"><a href="#斜体和粗体" class="headerlink" title="斜体和粗体"></a>斜体和粗体</h3><p><strong>语法说明</strong>:</p>
 <ol>
-<li>加粗<br>:   要加粗的文字左右用两个 “*” 号包裹<br>如: <strong>加粗文字</strong><br>code:   <code>**加粗文字**</code></li>
-<li>斜体<br>:   要倾斜的文字左右用一个 “*” 号包裹<br>如: <em>倾斜文字</em><br>code:   <code>*倾斜文字*</code></li>
-<li>斜体加粗<br>:   要倾斜和加粗的文字左右用三个 “*” 号包裹<br>如: <strong><em>加粗倾斜文字</em></strong><br>code:   <code>***加粗倾斜文字***</code></li>
+<li>加粗<br>:   要加粗的文字左右用两个 “<em>“ 号包裹<br>如: <strong>加粗文字</strong><br>code:   ` <em>*加粗文字</em></em> `</li>
+<li>斜体<br>:   要倾斜的文字左右用一个 “<em>“ 号包裹<br>如: </em>倾斜文字<em><br>code:   ` </em>倾斜文字* `</li>
+<li>斜体加粗<br>:   要倾斜和加粗的文字左右用三个 “<em>“ 号包裹<br>如: **</em>加粗倾斜文字<strong><em><br>code:   ` </em></strong>加粗倾斜文字<em>*</em> `</li>
 <li>删除线<br>：  要加删除线的文字左右用两个 ~ 号包裹<br>如: <del>加删除线文字</del><br>code:   <code>~~加删除线文字~~</code></li>
 </ol>
 <hr>
 <h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p><strong>语法说明</strong>:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;这是引用的内容</span><br><span class="line">&gt;&gt;这是引用的内容</span><br><span class="line">&gt;&gt;&gt;这是应用的内容</span><br><span class="line">&gt;&gt;&gt;&gt;这是应用的内容</span><br></pre></td></tr></table></figure>
-
 <p>效果如下：</p>
 <blockquote>
 <p>这是引用的内容</p>
@@ -87,30 +86,22 @@
 </blockquote>
 </blockquote>
 <hr>
-<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p><strong>语法说明</strong>：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">![图片ALT](图片地址 &quot;图片Title&quot;)</span><br><span class="line"></span><br><span class="line">![图片ALT][图片标记]</span><br><span class="line">[图片标记]:图片地址 &quot;图片Title&quot;</span><br><span class="line"></span><br><span class="line">图片ALT，当图片不能显示时显示的文字，对图片起到解释作用。</span><br><span class="line">图片Title，图片标题，当鼠标悬停在图片上显示，title可加可不加</span><br></pre></td></tr></table></figure>
-
+<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p><strong>语法说明</strong>：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">![图片ALT](图片地址 &quot;图片Title&quot;)</span><br><span class="line"></span><br><span class="line">![图片ALT][图片标记]</span><br><span class="line">[图片标记]:图片地址 &quot;图片Title&quot;</span><br><span class="line"></span><br><span class="line">图片ALT，当图片不能显示时显示的文字，对图片起到解释作用。</span><br><span class="line">图片Title，图片标题，当鼠标悬停在图片上显示，title可加可不加</span><br></pre></td></tr></table></figure></p>
 <p>效果如下:</p>
-<p><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=702257389,1274025419&fm=27&gp=0.jpg" alt="blockchain" title="区块链"></p>
-<p><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=702257389,1274025419&fm=27&gp=0.jpg" alt="blockchain" title="区块链"></p>
+<p><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=702257389,1274025419&amp;fm=27&amp;gp=0.jpg" alt="blockchain" title="区块链"></p>
+<p><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=702257389,1274025419&amp;fm=27&amp;gp=0.jpg" alt="blockchain" title="区块链"></p>
 <hr>
-<h3 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h3><p><strong>语法说明</strong>:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[链接名称](链接地址 &quot;链接Title&quot;)</span><br><span class="line">title 可加可不加</span><br><span class="line"></span><br><span class="line">[链接名称][链接标记]</span><br><span class="line">[链接标记]:链接地址 &quot;链接Title&quot;</span><br><span class="line"></span><br><span class="line">&lt;http:&#x2F;&#x2F;example.com&gt;</span><br></pre></td></tr></table></figure>
-
+<h3 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h3><p><strong>语法说明</strong>:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[链接名称](链接地址 &quot;链接Title&quot;)</span><br><span class="line">title 可加可不加</span><br><span class="line"></span><br><span class="line">[链接名称][链接标记]</span><br><span class="line">[链接标记]:链接地址 &quot;链接Title&quot;</span><br><span class="line"></span><br><span class="line">&lt;http:&#x2F;&#x2F;example.com&gt;</span><br></pre></td></tr></table></figure></p>
 <p>效果如下:<br><a href="http://www.google.com" target="_blank" rel="noopener" title="谷歌">google</a><br><a href="http://www.bing.com" target="_blank" rel="noopener">bing</a></p>
 <p><a href="http://www.baidu.com" target="_blank" rel="noopener" title="百度">百度</a><br><a href="http://www.jianshu.com" target="_blank" rel="noopener" title="简书">简书</a></p>
-<p><a href="mailto:&#x6f;&#x62;&#x6a;&#101;&#99;&#x74;&#x72;&#x61;&#98;&#x62;&#x69;&#x74;&#64;&#103;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#109;">&#x6f;&#x62;&#x6a;&#101;&#99;&#x74;&#x72;&#x61;&#98;&#x62;&#x69;&#x74;&#64;&#103;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#109;</a></p>
+<p><a href="&#109;&#x61;&#x69;&#108;&#116;&#111;&#x3a;&#x6f;&#98;&#106;&#101;&#99;&#116;&#x72;&#97;&#x62;&#98;&#x69;&#x74;&#x40;&#103;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#x6d;">&#x6f;&#98;&#106;&#101;&#99;&#116;&#x72;&#97;&#x62;&#98;&#x69;&#x74;&#x40;&#103;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#x6d;</a></p>
 <hr>
-<h3 id="分级标题"><a href="#分级标题" class="headerlink" title="分级标题"></a>分级标题</h3><p><strong>语法说明</strong>:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br><span class="line"></span><br><span class="line">***注意 #与标题之间有一个空格***</span><br></pre></td></tr></table></figure>
-<p>效果如下:</p>
+<h3 id="分级标题"><a href="#分级标题" class="headerlink" title="分级标题"></a>分级标题</h3><p><strong>语法说明</strong>:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br><span class="line"></span><br><span class="line">***注意 #与标题之间有一个空格***</span><br></pre></td></tr></table></figure><br>效果如下:</p>
 <h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><hr>
 <h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><ul>
 <li><strong>无序列表</strong></li>
 </ul>
-<p><strong>语法说明</strong>:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- 列表内容</span><br><span class="line">+ 列表内容</span><br><span class="line">* 列表内容</span><br><span class="line"></span><br><span class="line">注意: -、+、*、跟内容之间有一个空格</span><br></pre></td></tr></table></figure>
-
+<p><strong>语法说明</strong>:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- 列表内容</span><br><span class="line">+ 列表内容</span><br><span class="line">* 列表内容</span><br><span class="line"></span><br><span class="line">注意: -、+、*、跟内容之间有一个空格</span><br></pre></td></tr></table></figure></p>
 <p>效果如下：</p>
 <ul>
 <li>列表内容</li>
@@ -166,6 +157,40 @@
 </ol>
 </li>
 </ul>
+<ul>
+<li><strong>定义型列表</strong><br>:   定义型列表有名词和解释组成。一行写上定义，紧跟一行写上注释</li>
+</ul>
+<p><strong>语法说明</strong>:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">名词</span><br><span class="line">:   名词解释</span><br></pre></td></tr></table></figure></p>
+<p>效果如下:<br>Markdown<br>:   轻量级文本标记语言，可以转换成html,pdf等格式 (左侧有一个可见的冒号和四个不可见的空格)</p>
+<p>代码块<br>:   这是代码的定义</p>
+<pre><code>    代码块(&lt;
+        if(条件){
+            //todo
+        } 
+        else if(条件){
+            //todo
+        }
+    &gt;)
+</code></pre><hr>
+<h3 id="LaTex公式"><a href="#LaTex公式" class="headerlink" title="LaTex公式"></a>LaTex公式</h3><p><strong>*语法说明</strong>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$表示行内公式</span><br><span class="line"></span><br><span class="line">$$表示整行公式</span><br></pre></td></tr></table></figure>
+<p>效果如下:</p>
+<p>质能守恒方程可以用一个很简洁的方程式$ E=mc^2 $表达式</p>
+<p>函数式: $f(x)=\frac{P(x)}{Q(x)}$</p>
+<script type="math/tex; mode=display">sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}</script><h3 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h3><p><strong>语法说明</strong>:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">...flow</span><br><span class="line">st&#x3D;&gt;start: 开始</span><br><span class="line">inputA&#x3D;&gt;inputoutput: 输入用户名密码</span><br><span class="line">opA&#x3D;&gt;operation: 数据库查询子类</span><br><span class="line">conditionA&#x3D;&gt;condition: 是否有此用户</span><br><span class="line">conditionB&#x3D;&gt;condition: 密码是否正确</span><br><span class="line">opB&#x3D;&gt;operation: 读入用户信息</span><br><span class="line">e&#x3D;&gt;end: 登录</span><br><span class="line">st-&gt;inputA-&gt;opA-&gt;conditionA</span><br><span class="line">conditionA(yes)-&gt;conditionB</span><br><span class="line">conditionA(no)-&gt;inputA</span><br><span class="line">conditionB(yes)-&gt;opB-&gt;e</span><br><span class="line">conditionB(no)-&gt;inputA</span><br><span class="line">...</span><br><span class="line">由于渲染问题，请自行将...替换成&quot;&#96;&#96;&#96;&quot;</span><br></pre></td></tr></table></figure></p>
+<p>效果如下:</p>
+<p><div id="flowchart-0" class="flow-chart"></div><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: 开始
+inputA=>inputoutput: 输入用户名密码
+opA=>operation: 数据库查询子类
+conditionA=>condition: 是否有此用户
+conditionB=>condition: 密码是否正确
+opB=>operation: 读入用户信息
+e=>end: 登录
+st->inputA->opA->conditionA
+conditionA(yes)->conditionB
+conditionA(no)->inputA
+conditionB(yes)->opB->e
+conditionB(no)->inputA</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></p>
 
 </article>
 
@@ -307,7 +332,62 @@ $(function() {
     });
 });
 </script>
+    <!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+    <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": { 
+        preferredFont: "TeX", 
+        availableFonts: ["STIX","TeX"], 
+        linebreaks: { automatic:true }, 
+        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) 
+    },
+    tex2jax: { 
+        inlineMath: [ ["$", "$"], ["\\(","\\)"] ], 
+        processEscapes: true, 
+        ignoreClass: "tex2jax_ignore|dno",
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {  
+        equationNumbers: { autoNumber: "AMS" },
+        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, 
+        Macros: { href: "{}" } 
+    },
+    messageStyle: "none"
+    }); 
+</script>
+<!-- 给MathJax元素添加has-jax class -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<!-- 通过连接CDN加载MathJax的js代码 -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+    
 </div>
     </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<!-- <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>
